@@ -31,8 +31,11 @@ header img {
 }
 
 .hero img {
+    display: flex;
     background-color: grey;
     color: #f9faf8;
+    align-items: center;
+    justify-content: center;
 }
 
 button, .call-to-action {
@@ -48,12 +51,10 @@ blockquote  {
     color: #1f2937
 }
 
-blockquote footer {
-    background-color: #e5e7eb;
+blockquote .footer {
     font-size: 24px;
     font-weight:bold;
     font-style: normal;
-    color: #1f2937
 }
 
 ul {
@@ -62,4 +63,111 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.main-text button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.main-text h1,
+.main-text p,
+.call-to-action h3,
+.call-to-action p {
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+}
+
+.info ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.info img {
+    display: flex;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #3882f6;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 50px 150px;
+}
+
+blockquote .footer {
+    text-align: right;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 100px;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.call-to-action button {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #f9faf8;
+    padding: 5px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
 }
